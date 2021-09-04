@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html>
-<body>
-
-<h2>Learn the guitar fretboard</h2>
-
-<p>Play these notes on every string of the guitar, starting from the lowest to highest string and then back again (no skipping) at 40 bpm (with a metronome)!</p>
-
-<p id="displaynotes"></p>
-
 <script>
 let header = "Notes";
 let naturals = ["A","B","C","D","E","F","G"];
@@ -24,10 +14,5 @@ for (const x of allnotes) {
 }
 
 html += `</ul>`;
-document.getElementById("displaynotes").innerHTML = html;
+document.getElementById("demo").innerHTML = html;
 </script>
-
-<p>Won't work in Internet Explorer.</p>
-
-</body>
-</html>
