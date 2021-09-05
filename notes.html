@@ -6,28 +6,15 @@
 
 <p>Play these notes on every string of the guitar, starting from the lowest to highest string and then back again (no skipping) at 40 bpm (with a metronome)!</p>
 
-<p id="displaynotes"></p>
+<p id="displayNotes"></p>
+
+<script src="notes.js"></script>
 
 <script>
-let header = "Notes";
-let naturals = ["A","B","C","D","E","F","G"];
-let sharps = ["A&#x266F;","C&#x266F;","D&#x266F;","F&#x266F;","G&#x266F;"]
-let flats = ["D&#x266D;","E&#x266D;","G&#x266D;","A&#x266D;","B&#x266D;"]
-
-let allnotes = naturals.concat(sharps, flats)
-allnotes.sort(function(a, b){return 0.5 - Math.random()});
-
-let html = `<h2>${header}</h2><ul>`;
-
-for (const x of allnotes) {
-  html += `<li>${x}</li>`;
-}
-
-html += `</ul>`;
-document.getElementById("displaynotes").innerHTML = html;
+  writeRandomNotes();
 </script>
 
-<p>Won't work in Internet Explorer.</p>
+<p>Whatever.</p>
 
 </body>
 </html>
