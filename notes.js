@@ -10,8 +10,13 @@ function writeRandomNotes()
         
     let html = `<h2>${header}</h2><ul>`;
         
-    for (const x of allnotes) {
-      html += `<li>${x}</li>`;
+    for (let i = 0; i < allnotes.length; i += 2) {
+	let x = allnotes[i];
+	
+	let y = allnotes[i + 1];
+	if (typeof y == 'undefined') {y = "";}
+	
+        html += `<li>${x} &#9; ${y}</li>`;
     }
         
     html += `</ul>`;
