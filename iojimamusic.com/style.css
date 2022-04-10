@@ -1,3 +1,6 @@
 body {
     background: #fffffb;
+    max-width: 600px;
+    background-image: url(images/Iojima_from_bridge_scaled.jpg);
+    background-position: center;
 }
